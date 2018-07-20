@@ -1,6 +1,6 @@
 ## NoveLSM instructions 
 Note, this is a beta version. More updates and testing to follow shortly.
-Please add problems to the issues tab. 
+Please add problems/questions to the issues tab.
 
 ### Compiling NoveLSM
 ```

@@ -64,10 +64,11 @@ Run the vanilla LevelDB benchmark
   $ scripts/run_vanilla_leveldb.sh
 ```
 
-### For using PMEM IO's persistent APIs
+### For using Intel's PMDK APIs
 
 This beta includes Intel's PMDK persistent memory copy and flush
-functionalities. To use Intel's PMDK APIs instead of the default NoveLSM API,
+functionalities. To use Intel's PMDK APIs instead of the default NoveLSM API 
+use the following instruction. 
 
 ```
   $ vim build_detect_platform 
@@ -75,10 +76,12 @@ functionalities. To use Intel's PMDK APIs instead of the default NoveLSM API,
   //Enable PMEMIO flag
   COMMON_FLAGS="$COMMON_FLAGS -D_ENABLE_PMEMIO"   
 
+  //follow instructions from https://github.com/pmem/pmdk 
+  //for dependencies
   $ scripts/install_pmemio.sh
 ```
-If you notice errors, follow instructions from https://github.com/pmem/pmdk/
-to install pmdk
+We are currently getting rid of PMDK's transaction dependence (high-overhead); 
+transactions will be available in the next version.
 
 ```
   $ source scripts/setvars.sh

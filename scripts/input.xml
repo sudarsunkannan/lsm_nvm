@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<test>
+    <value-size-main enable='1'> <!--enables a experiemnt to vary the value size for the dbbench-->
+        <seed-count>2</seed-count>  <!--specifies factor by which value size for a KV pair should be incremented-->
+        <num-tests>4</num-tests> <!-- number of tests to run -->
+	<memory-levels>2</memory-levels> <!-- NoveLSM uses two-levels of memory, so set it to 2 always-->
+        <thread-count>1</thread-count>  <!-- Number of DBbench's client threads -->
+        <value-size>4096</value-size> <!-- Starting value size; the value size is incremented by a factor of seed-count -->
+        <num-elements>1000000</num-elements> <!-- Number of elements; decremented by seed-count factor to keep DB size constant -->
+        <DRAM-mem>64</DRAM-mem> <!-- DRAM memtable size in MBs-->
+        <NVM-mem>4096</NVM-mem> <!-- NVM persistent memtable size in MBs; must be atleast 2x larger than DRAM memtable -->
+        <num-readthreads>1</num-readthreads> <!-- NoveLSM's read parallelism thread; for now use only 0 or 1 -->
+    </value-size-main>
+
+    <thread-count-main enable='0'>
+        <seed-count>1</seed-count>
+        <num-tests>4</num-tests>
+        <num-elements>1000000</num-elements>
+        <value-size>2048</value-size>
+        <DRAM-mem>500</DRAM-mem>
+        <NVM-mem>2500</NVM-mem>
+        <memory-levels>2</memory-levels>
+        <num-readthreads>0</num-readthreads>
+        <thread-count>0</thread-count>
+    </thread-count-main>
+    <num-elements-main enable='0'>
+        <seed-count>20000</seed-count>
+        <num-tests>2</num-tests>
+        <value-size>1024</value-size>
+        <thread-count>2</thread-count>
+        <DRAM-mem>20</DRAM-mem>
+        <NVM-mem>20</NVM-mem>
+        <memory-levels>2</memory-levels>
+    </num-elements-main>
+    <sensitivity-main enable='0'>
+        <seed-size>4096</seed-size>
+        <value-size>4096</value-size>
+        <num-tests>8</num-tests>
+        <num-levels>2</num-levels>
+        <num-readthreads>2</num-readthreads>
+        <thread-count>1</thread-count>
+        <num-elements>1000000</num-elements>
+        <DRAM-mem>500</DRAM-mem>
+        <NVM-mem>2500</NVM-mem>
+    </sensitivity-main>
+    <buffer-size-main enable='0'>
+        <memory-levels>2</memory-levels>
+        <thread-count>1</thread-count>
+        <num-readthreads>1</num-readthreads> 
+        <mem0-seed-size>100</mem0-seed-size>
+        <mem1-seed-size>200</mem1-seed-size>
+        <step-size>200</step-size>
+        <num-tests>8</num-tests>
+        <num-elements>100000</num-elements>
+        <value-size>4096</value-size>
+    </buffer-size-main>
+    <memory-levels-main enable='0'>
+        <num-levels>2</num-levels>
+        <thread-count>1</thread-count>
+        <num-elements>500000</num-elements>
+        <value-size>4096</value-size>
+        <DRAM-mem>100</DRAM-mem>
+        <NVM-mem>500</NVM-mem>
+        <num-readthreads>1</num-readthreads>
+    </memory-levels-main>
+    <readthread-main enable='0'>
+        <num-readthreads>1</num-readthreads>
+        <num-levels>2</num-levels>
+        <thread-count>1</thread-count>
+        <num-elements>100000</num-elements>
+        <value-size>4096</value-size>
+        <DRAM-mem>20</DRAM-mem>
+        <NVM-mem>20</NVM-mem>
+    </readthread-main>
+    <benchmarks> <!-- tags specify type of DBbench's benchmark -->
+	<test>fillrandom</test>
+	<test>readrandom</test>
+    </benchmarks>
+</test>
+

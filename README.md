@@ -1,3 +1,7 @@
+## NoveLSM instructions 
+Note, this is a beta version. More updates and testing to follow shortly.
+Please add problems to the issues tab. 
+
 ### Compiling NoveLSM
 ```
   $ cd hoard
@@ -14,6 +18,8 @@ or reduce key-value enteries
   $ cd scripts
 
   //Configure and run Linux DAX file system
+  // See https://pmem.io/2016/02/22/pm-emulation.html for 
+  // instructions
   $ scripts/mount_dax.sh
 
   //For using simple ramdisk instead of DAX (performance can be a 
@@ -78,9 +84,6 @@ to install pmdk
   $ source scripts/setvars.sh
   $ scripts/run_dbbench.sh
 ```
-
-More updates shortly :)
-
 
 #### Cite
 

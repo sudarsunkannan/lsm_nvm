@@ -12,7 +12,7 @@ Please add problems/questions to the issues tab.
 
 ### Setting up in-memory file system for database
 Mount the NVM file system. Please use a large size (e.g., 32GB)
-or reduce key-value enteries
+alternatively, reduce key-value entries.
 ```
   $ source scripts/setvars.sh
   $ cd scripts
@@ -41,7 +41,7 @@ First set the environment variables and then run the benchmark
 The script first simply runs the benchmark with random writes for 1M keys and 
 reads them during restart. Next, the benchmark randomly kills "random write" operation 
 after 5 seconds, restarts, and then reads the data. Look inside the script for 
-more details or varying the values.
+more details.
 
 ```
   $ scripts/run_restart.sh
@@ -78,8 +78,7 @@ use the following instruction.
   //follow instructions from https://github.com/pmem/pmdk 
   //for dependencies
   $ scripts/install_pmemio.sh
-```
-```
+
   $ source scripts/setvars.sh
   $ scripts/run_dbbench.sh
 ```

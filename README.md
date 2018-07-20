@@ -84,14 +84,11 @@ More updates shortly :)
 
 #### Cite
 
-inproceedings {novelsm,
-author = {Sudarsun Kannan and Nitish Bhat and Ada Gavrilovska and Andrea Arpaci-Dusseau and Remzi Arpaci-Dusseau},
-title = {Redesigning LSMs for Nonvolatile Memory with NoveLSM},
-booktitle = {2018 {USENIX} Annual Technical Conference ({USENIX} {ATC} 18)},
-year = {2018},
-isbn = {978-1-931971-44-7},
-address = {Boston, MA},
-pages = {993--1005},
-url = {https://www.usenix.org/conference/atc18/presentation/kannan},
-publisher = {{USENIX} Association},
+inproceedings {novelsm, <br>
+author = {Sudarsun Kannan and Nitish Bhat and Ada Gavrilovska and Andrea Arpaci-Dusseau and Remzi Arpaci-Dusseau},<br>
+title = {Redesigning LSMs for Nonvolatile Memory with NoveLSM},<br>
+booktitle = {2018 {USENIX} Annual Technical Conference ({USENIX} {ATC} 18)}, <br>
+year = {2018}, <br>
+address = {Boston, MA}, <br>
+publisher = {{USENIX} Association}, <br>
 }

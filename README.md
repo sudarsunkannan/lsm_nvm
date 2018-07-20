@@ -47,11 +47,10 @@ more details or varying the values.
   $ scripts/run_restart.sh
 ```
 
-### Running Vanilla LevelDB
-
-NoveLSM is built over LevelDB 1.21. The script compiles the LevelDB source code 
-with release version.</br> 
-Disable Snappy compression; If enabled, Snappy will only compress SSTable.
+### Running Vanilla LevelDB on NVMa
+Mainly for performance comparison. NoveLSM is built over LevelDB 1.21</br>
+The script compiles the LevelDB 1.21 source code with release version and uses NVM for SSTable</br>
+Disable Snappy compression; If enabled, Snappy will only compress SSTable. </br>
 Also, ensure that cmake 3.9 or greater is enabled.</br>
 ```
   # If the system's cmake version is less than 3.9

@@ -84,14 +84,8 @@ use the following instruction.
 ```
 We are currently getting rid of PMDK's transaction dependence (due to 
 high overhead); <br> transactions will be available in the next version 
-instead of simple persistent commits
+instead of simple persistent commits.
 
-#### Cite
-@inproceedings {novelsm, <br>
-author = {Sudarsun Kannan and Nitish Bhat and Ada Gavrilovska and Andrea Arpaci-Dusseau and Remzi Arpaci-Dusseau},<br>
-title = {Redesigning LSMs for Nonvolatile Memory with NoveLSM},<br>
-booktitle = {2018 {USENIX} Annual Technical Conference ({USENIX} {ATC} 18)}, <br>
-year = {2018}, <br>
-address = {Boston, MA}, <br>
-publisher = {{USENIX} Association}, <br>
-}
+More updates to follow...
+
+

@@ -2,7 +2,7 @@
 #set -x
 
 NUMTHREAD=1
-BENCHMARKS="fillrandom,readrandom,stats"
+BENCHMARKS="fillrandom,readrandom"
 NUMKEYS="1000000"
 #NoveLSM specific parameters
 #NoveLSM uses memtable levels, always set to num_levels 2

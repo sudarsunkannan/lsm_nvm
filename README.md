@@ -79,17 +79,15 @@ use the following instruction.
   //for dependencies
   $ scripts/install_pmemio.sh
 ```
-We are currently getting rid of PMDK's transaction dependence (due to 
-high overhead); <br> transactions will be available in the next version 
-instead of simple persistent commits
-
 ```
   $ source scripts/setvars.sh
   $ scripts/run_dbbench.sh
 ```
+We are currently getting rid of PMDK's transaction dependence (due to 
+high overhead); <br> transactions will be available in the next version 
+instead of simple persistent commits
 
 #### Cite
-
 @inproceedings {novelsm, <br>
 author = {Sudarsun Kannan and Nitish Bhat and Ada Gavrilovska and Andrea Arpaci-Dusseau and Remzi Arpaci-Dusseau},<br>
 title = {Redesigning LSMs for Nonvolatile Memory with NoveLSM},<br>

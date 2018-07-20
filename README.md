@@ -67,7 +67,7 @@ Run the vanilla LevelDB benchmark
 ### For using Intel's PMDK APIs
 
 This beta includes Intel's PMDK persistent memory copy and flush
-functionalities. To use Intel's PMDK APIs instead of the default NoveLSM API 
+functionalities. <br> To use Intel's PMDK APIs instead of the default NoveLSM API 
 use the following instruction. 
 
 ```
@@ -80,7 +80,7 @@ use the following instruction.
   //for dependencies
   $ scripts/install_pmemio.sh
 ```
-We are currently getting rid of PMDK's transaction dependence (high-overhead); 
+We are currently getting rid of PMDK's transaction dependence (high-overhead); <br>
 transactions will be available in the next version.
 
 ```

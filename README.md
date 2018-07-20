@@ -87,7 +87,7 @@ to install pmdk
 
 #### Cite
 
-inproceedings {novelsm, <br>
+@inproceedings {novelsm, <br>
 author = {Sudarsun Kannan and Nitish Bhat and Ada Gavrilovska and Andrea Arpaci-Dusseau and Remzi Arpaci-Dusseau},<br>
 title = {Redesigning LSMs for Nonvolatile Memory with NoveLSM},<br>
 booktitle = {2018 {USENIX} Annual Technical Conference ({USENIX} {ATC} 18)}, <br>

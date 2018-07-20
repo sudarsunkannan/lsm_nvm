@@ -79,40 +79,19 @@ to install pmdk
   $ scripts/run_dbbench.sh
 ```
 
-More updates soon...
-
-<!---
-### To run experiments, varying parameters
-
-Set the enivornmental variables and run the benchmark script
-```
-  $ source scripts/setvars.sh
-  $ python scripts/benchmark.py
-```
-
-The benchmark reads the configuration from "input.xml" which 
-specifies different experimental configuration and parameters
-For example, consider the test that varies the value size of the 
-key-value pair. The XML configuration below describes the XML tags.
-
-```
-<value-size-main enable='1'> <!-- experiemnt to vary the value size for the dbbench-->
-  <seed-count>1</seed-count>  <!-- factor to increment value size in bytes -->
-  <num-tests>2</num-tests> <!-- number of tests to run -->
-  <memory-levels>2</memory-levels> <!-- NoveLSM uses memtable levels, always set to 2-->
-  <thread-count>1</thread-count>  <!-- Number of DBbench's client threads -->
-  <value-size>4096</value-size> <!-- Default value size -->
-  <num-elements>100000</num-elements> <!-- #. of elements; decremented by seed-count -->
-  <DRAM-mem>64</DRAM-mem> <!-- DRAM memtable size in MBs-->
-  <NVM-mem>2048</NVM-mem> <!-- NVM memtable size in MBs; atleast 2x larger than DRAM -->
-  <num-readthreads>1</num-readthreads> <!-- Read parallelism threads (use 0 or 1 for now) -->
-</value-size-main>
+More updates shortly :)
 
 
-<benchmarks> <!-- tags specify type of DBbench's benchmark -->
-  <test>fillrandom</test>
-  <test>readrandom</test>
-</benchmarks>
-```
--->
+#### Cite
 
+inproceedings {novelsm,
+author = {Sudarsun Kannan and Nitish Bhat and Ada Gavrilovska and Andrea Arpaci-Dusseau and Remzi Arpaci-Dusseau},
+title = {Redesigning LSMs for Nonvolatile Memory with NoveLSM},
+booktitle = {2018 {USENIX} Annual Technical Conference ({USENIX} {ATC} 18)},
+year = {2018},
+isbn = {978-1-931971-44-7},
+address = {Boston, MA},
+pages = {993--1005},
+url = {https://www.usenix.org/conference/atc18/presentation/kannan},
+publisher = {{USENIX} Association},
+}

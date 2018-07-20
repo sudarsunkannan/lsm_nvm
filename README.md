@@ -80,8 +80,9 @@ use the following instruction.
   //for dependencies
   $ scripts/install_pmemio.sh
 ```
-We are currently getting rid of PMDK's transaction dependence (high-overhead); <br>
-transactions will be available in the next version.
+We are currently getting rid of PMDK's transaction dependence (due to 
+high overhead); <br> transactions will be available in the next version 
+instead of simple persistent commits
 
 ```
   $ source scripts/setvars.sh

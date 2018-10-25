@@ -1,5 +1,5 @@
 ## NoveLSM
-NoveLSM is a persistent-memory implementation of LevelDB. More details are in ATC '18 paper. Note, this is a beta version and we are making more updates (see below). Please feel add problems/questions to the issues tab and we will try our best to fix them. Ofcourse your patches are most welcome :)
+NoveLSM is a persistent-memory implementation of LevelDB. More details are in ATC '18 paper. Note, this is a beta version and we are making more updates (see below). Pleaseadd problems/questions to the issues tab and we will try our best to fix them soon. Ofcourse your patches are most welcome :)
 
 ### Compiling NoveLSM
 ```

@@ -35,7 +35,7 @@ First set the environment variables and then run the benchmark
   $ scripts/run_dbbench.sh
 ```
 
-### Testing restarts or failure and recovery
+### Testing restarts
 
 The script first simply runs the benchmark with random writes for 1M keys and 
 reads them during restart. Next, the benchmark randomly kills "random write" operation 

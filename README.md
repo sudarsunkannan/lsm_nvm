@@ -1,5 +1,5 @@
 ## NoveLSM
-NoveLSM is a persistent-memory implementation of LevelDB. More details are in ATC '18 paper. Note, this is a beta version and we are making more updates. Please feel add problems/questions to the issues tab and we will try our best to fix them. Ofcourse your patches are most welcome :)
+NoveLSM is a persistent-memory implementation of LevelDB. More details are in ATC '18 paper. Note, this is a beta version and we are making more updates (see below). Please feel add problems/questions to the issues tab and we will try our best to fix them. Ofcourse your patches are most welcome :)
 
 ### Compiling NoveLSM
 ```
@@ -81,13 +81,9 @@ use the following instruction.
   $ source scripts/setvars.sh
   $ scripts/run_dbbench.sh
 ```
-### Fixes underway
+### Ongoing Fixes
+We are currently getting rid of PMDK's transaction dependence (due to high overhead) and frequently changing interfaces and implementing our own NVM transactions tailored for LSMs. Current code provides simple persistent commits.
 
-We are currently getting rid of PMDK's transaction dependence (due to 
-high overhead) and frequently changing interfaces and implementing our own NVM transactions; <br> 
-transactions will be available in the next version instead of simple persistent commits in the current code.
-
-We are also changing our thread pool implementation that avoids any core-sharing between threads. 
-More updates soon.
+We are also changing our thread pool implementation that avoids core-sharing across threads. Hence, we use only one additional thread dedicated to memtable searches in addition to the main process threads.
 
 

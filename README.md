@@ -87,7 +87,7 @@ We are currently getting rid of PMDK's transaction dependence (due to
 high overhead) and frequently changing interfaces and implementing our own NVM transactions; <br> 
 transactions will be available in the next version instead of simple persistent commits in the current code.
 
-We are also chaning our thread pool implementation that avoids any core-sharing between threads. 
+We are also changing our thread pool implementation that avoids any core-sharing between threads. 
 More updates soon.
 
 

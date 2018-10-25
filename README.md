@@ -84,6 +84,6 @@ use the following instruction.
 ### Ongoing Fixes
 We are currently getting rid of PMDK's transaction dependence (due to high overhead) and frequently changing interfaces and implementing our own NVM transactions tailored for LSMs. Current code provides simple persistent commits.
 
-We are also changing our thread pool implementation that avoids core-sharing across threads. Hence, we use only one additional thread dedicated to memtable searches in addition to the main process threads.
+We are also changing our thread pool implementation that avoids core-sharing across threads. Hence, we use only one additional thread dedicated to memtable searches in addition to the main process threads. Also note that, as noted in the paper, performance of read threading is dependent on the object size and size of the db.
 
 
